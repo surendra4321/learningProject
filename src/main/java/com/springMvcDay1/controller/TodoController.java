@@ -16,7 +16,7 @@ public class TodoController {
 	
 	@RequestMapping("/add")
 	public String addTodo(Model m) {
-		 
+		 System.out.println("Adding all todos");
 		m.addAttribute("page", "add");
 		return "home";
 	} 
