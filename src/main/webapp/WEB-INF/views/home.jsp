@@ -22,10 +22,16 @@
 <body>
 	<div class="container mt-3">
 		<h1 class="text-center">Welcome to TODO Manager</h1>
+		<c:if test="${not empty msg}">
+		<div class="alert alert-success">
+		   <b><c:out value="${msg}"></c:out></b>  
+		</div>
+		
+		
+		</c:if>
+		
 		<div class="row mt-4">
-
 			<div class="col-md-2">
-
 				<div class="list-group">
 					<button type="button"
 						class="list-group-item list-group-item-action active"
