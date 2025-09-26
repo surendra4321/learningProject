@@ -22,6 +22,9 @@ public class TodoController {
 	public String home(Model m) {
 		String str = "home";
 		m.addAttribute("page", str);
+		//Type casted the todo list
+	   List<Todo> list=(List<Todo>)context.getAttribute("list");
+	   m.addAttribute("todos",list);
 		return "home";
 	}
 
