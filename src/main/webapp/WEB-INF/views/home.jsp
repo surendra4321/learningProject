@@ -44,7 +44,7 @@
 				   <c:if test="${page=='add'}">
 				<h1 class="">ADD TODO</h1>
 				<br>
-				<form:form action="/saveTodo" method="post" modelAttribute="todo">
+				<form:form action="saveTodo" method="post" modelAttribute="todo">
 				   <div class="form-group">
 				       <form:input path="todoTitle" cssClass="form-control" placeholder="Enter the todo title"></form:input>
 				   </div>
@@ -53,7 +53,8 @@
 				       cssStyle="height:300px;" /> 
 				   </div>
 				   <div class="container text-center">
-				   <button type="button" class="btn btn-primary">ADD TODO</button>
+				   <button class="btn btn-primary">ADD TODO</button> 
+				<!--   <button class="btn btn-primary">ADD TODO</button> --> 
 				   </div>
 				</form:form>
 				</c:if>
