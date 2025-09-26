@@ -15,6 +15,7 @@ public class MyListener implements ServletContextListener{
     public void contextInitialized(ServletContextEvent sce) {
     	System.out.println("context created");
     	   List<Todo> list= new ArrayList<Todo>();
+    	   System.out.println(list);
     	   ServletContext context = sce.getServletContext();
     	   context.setAttribute("list", list);
 		
